@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:fillViewport="true"
+
+    android:clipToPadding="false"
+
+    android:paddingBottom="120dp"
+
+    android:background="@color/blossom_background">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+        android:padding="16dp">
+
+
+
+        <!-- TOP BAR -->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="45dp"
+
+            android:gravity="center_vertical"
+
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                android:id="@+id/backButton"
+
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+
+                android:gravity="center"
+
+                android:text="‹"
+
+                android:textSize="34sp"
+
+                android:textColor="#C2185B"/>
+
+
+
+            <TextView
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+
+                android:gravity="center"
+
+                android:text="Blossom"
+
+                android:textSize="18sp"
+
+                android:textStyle="bold"
+
+                android:textColor="#C2185B"
+
+                android:fontFamily="serif"/>
+
+
+
+            <ImageView
+
+                android:layout_width="30dp"
+
+                android:layout_height="30dp"
+
+                android:src="@drawable/ic_notification"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <!-- MOON -->
+
+        <TextView
+
+            android:layout_width="50dp"
+
+            android:layout_height="50dp"
+
+            android:layout_gravity="center"
+
+            android:layout_marginTop="20dp"
+
+            android:gravity="center"
+
+            android:text="☾"
+
+            android:textSize="26sp"
+
+            android:textColor="#C2185B"
+
+            android:background="@drawable/icon_circle"/>
+
+
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:layout_marginTop="12dp"
+
+            android:text="NightBloom"
+
+            android:textSize="28sp"
+
+            android:textStyle="bold"
+
+            android:textColor="@color/blossom_text"
+
+            android:fontFamily="serif"/>
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:text="Protect your evening routine."
+
+            android:textSize="14sp"
+
+            android:textColor="#8A6F7A"/>
+
+
+
+
+
+
+        <!-- BEDTIME CARDS -->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="100dp"
+
+            android:layout_marginTop="20dp"
+
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+
+                android:gravity="center"
+
+                android:orientation="vertical"
+
+                android:background="@drawable/dashboard_card">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="◷&#10;PLANNED&#10;BEDTIME"
+
+                    android:gravity="center"
+
+                    android:textSize="11sp"
+
+                    android:textColor="#8A6F7A"/>
+
+
+                <TextView
+
+                    android:id="@+id/plannedBedtime"
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="11:00 PM"
+
+                    android:textSize="16sp"
+
+                    android:textStyle="bold"
+
+                    android:textColor="@color/blossom_text"/>
+
+
+            </LinearLayout>
+
+
+
+            <Space
+
+                android:layout_width="10dp"
+
+                android:layout_height="1dp"/>
+
+
+
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+
+                android:gravity="center"
+
+                android:orientation="vertical"
+
+                android:background="@drawable/dashboard_card">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="☾&#10;ACTUAL&#10;BEDTIME"
+
+                    android:gravity="center"
+
+                    android:textSize="11sp"
+
+                    android:textColor="#8A6F7A"/>
+
+
+                <TextView
+
+                    android:id="@+id/actualBedtime"
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="12:12 AM"
+
+                    android:textSize="16sp"
+
+                    android:textStyle="bold"
+
+                    android:textColor="#EC4C88"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <!-- DELAY CARD -->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="150dp"
+
+            android:layout_marginTop="15dp"
+
+            android:gravity="center"
+
+            android:orientation="vertical"
+
+            android:background="@drawable/dashboard_card">
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="⌛"
+
+                android:textSize="24sp"/>
+
+
+            <TextView
+
+                android:id="@+id/bedDelay"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="Bedtime Delay: 1h 12m"
+
+                android:textSize="18sp"
+
+                android:textStyle="bold"
+
+                android:textColor="#EC4C88"/>
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="↗ 18 min more than your weekly average"
+
+                android:textSize="12sp"
+
+                android:textColor="#8A6F7A"/>
+
+
+        </LinearLayout>
+
+        <!-- LATE NIGHT USAGE -->
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="18dp"
+
+            android:text="Late-Night Usage"
+
+            android:textSize="18sp"
+
+            android:textStyle="bold"
+
+            android:textColor="@color/blossom_text"/>
+
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="130dp"
+
+            android:layout_marginTop="10dp"
+
+            android:padding="18dp"
+
+            android:orientation="vertical"
+
+            android:background="@drawable/dashboard_card">
+
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:text="◉  Instagram                         32 min"
+
+                android:textSize="14sp"
+
+                android:textColor="@color/blossom_text"/>
+
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="12dp"
+
+                android:text="▶  YouTube                          25 min"
+
+                android:textSize="14sp"
+
+                android:textColor="@color/blossom_text"/>
+
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="12dp"
+
+                android:text="♪  TikTok                            19 min"
+
+                android:textSize="14sp"
+
+                android:textColor="@color/blossom_text"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <!-- MORNING ENERGY -->
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="18dp"
+
+            android:text="Morning Energy"
+
+            android:textSize="18sp"
+
+            android:textStyle="bold"
+
+            android:textColor="@color/blossom_text"/>
+
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="140dp"
+
+            android:layout_marginTop="10dp"
+
+            android:padding="18dp"
+
+            android:orientation="vertical"
+
+            android:background="@drawable/dashboard_card">
+
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:text="Energy Level                         3/5"
+
+                android:textSize="14sp"
+
+                android:textColor="@color/blossom_text"/>
+
+
+
+            <ProgressBar
+
+                android:layout_width="match_parent"
+
+                android:layout_height="8dp"
+
+                android:layout_marginTop="8dp"
+
+                android:progress="60"
+
+                android:progressTint="#EC4C88"
+
+                style="?android:attr/progressBarStyleHorizontal"/>
+
+
+
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="18dp"
+
+                android:text="Sleep Satisfaction                 3/5"
+
+                android:textSize="14sp"
+
+                android:textColor="@color/blossom_text"/>
+
+
+
+            <ProgressBar
+
+                android:layout_width="match_parent"
+
+                android:layout_height="8dp"
+
+                android:layout_marginTop="8dp"
+
+                android:progress="60"
+
+                android:progressTint="#EC4C88"
+
+                style="?android:attr/progressBarStyleHorizontal"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <!-- BLOSSOM INSIGHT -->
+
+
+        <!-- BLOSSOM INSIGHT -->
+
+        <TextView
+
+            android:id="@+id/blossomInsight"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="120dp"
+
+            android:layout_marginTop="18dp"
+
+            android:padding="20dp"
+
+            android:text="●  BLOSSOM INSIGHT&#10;&#10;Your bedtime is delayed most on nights when social media use exceeds 45 minutes."
+
+            android:textSize="14sp"
+
+            android:textColor="#6D4C5B"
+
+            android:background="@drawable/privacy_box"/>
+
+
+
+
+
+
+        <!-- START ROUTINE BUTTON -->
+
+
+        <Button
+
+            android:id="@+id/startRoutine"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="52dp"
+
+            android:layout_marginTop="25dp"
+
+            android:layout_marginBottom="60dp"
+
+            android:text="☾  Start NightBloom Routine"
+
+            android:textAllCaps="false"
+
+            android:textSize="14sp"
+
+            android:textColor="@android:color/white"
+
+            android:background="@drawable/button_pink"
+
+            android:backgroundTint="@null"
+
+            android:stateListAnimator="@null"/>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

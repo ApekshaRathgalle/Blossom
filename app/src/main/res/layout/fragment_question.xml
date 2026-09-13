@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:background="@color/blossom_background">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+        android:paddingBottom="40dp">
+
+
+
+        <!-- Back Arrow -->
+
+        <TextView
+
+            android:id="@+id/backArrow"
+
+            android:layout_width="40dp"
+
+            android:layout_height="40dp"
+
+            android:layout_marginStart="20dp"
+
+            android:layout_marginTop="35dp"
+
+            android:text="‹"
+
+            android:textSize="40sp"
+
+            android:textColor="#EC4C88"
+
+            android:fontFamily="serif"/>
+
+
+
+
+        <!-- Title -->
+
+
+        <TextView
+
+            android:layout_width="340dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:layout_marginTop="30dp"
+
+            android:gravity="center"
+
+            android:text="What brings you&#10;to Blossom?"
+
+            android:textSize="30sp"
+
+            android:textStyle="bold"
+
+            android:textColor="@color/blossom_text"
+
+            android:fontFamily="serif"/>
+
+
+
+        <!-- Description -->
+
+
+        <TextView
+
+            android:layout_width="330dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:layout_marginTop="18dp"
+
+            android:gravity="center"
+
+            android:text="Choose what you want to improve&#10;about your digital habits."
+
+            android:textSize="16sp"
+
+            android:textColor="#8A6F7A"
+
+            android:fontFamily="serif"/>
+
+
+
+
+
+        <!-- CARD 1 -->
+
+
+        <LinearLayout
+
+            android:id="@+id/cardScreenTime"
+
+            android:layout_width="340dp"
+
+            android:layout_height="120dp"
+
+            android:layout_gravity="center"
+
+            android:layout_marginTop="40dp"
+
+            android:padding="20dp"
+
+            android:orientation="vertical"
+
+            android:background="@drawable/permission_card">
+
+
+
+            <ImageView
+
+                android:layout_width="35dp"
+
+                android:layout_height="35dp"
+
+                android:padding="7dp"
+
+                android:src="@drawable/ic_usage"
+
+                android:background="@drawable/icon_circle"/>
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="8dp"
+
+                android:text="Reduce Screen Time"
+
+                android:textSize="20sp"
+
+                android:textStyle="bold"
+
+                android:textColor="@color/blossom_text"
+
+                android:fontFamily="serif"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <!-- CARD 2 -->
+
+
+        <LinearLayout
+
+            android:id="@+id/cardSleep"
+
+            android:layout_width="340dp"
+
+            android:layout_height="120dp"
+
+            android:layout_gravity="center"
+
+            android:layout_marginTop="15dp"
+
+            android:padding="20dp"
+
+            android:orientation="vertical"
+
+            android:background="@drawable/permission_card">
+
+
+
+            <ImageView
+
+                android:layout_width="35dp"
+
+                android:layout_height="35dp"
+
+                android:padding="7dp"
+
+                android:src="@drawable/ic_notification"
+
+                android:background="@drawable/icon_circle"/>
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="8dp"
+
+                android:text="Improve Sleep"
+
+                android:textSize="20sp"
+
+                android:textStyle="bold"
+
+                android:textColor="@color/blossom_text"
+
+                android:fontFamily="serif"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <!-- CARD 3 -->
+
+
+        <LinearLayout
+
+            android:id="@+id/cardFocus"
+
+            android:layout_width="340dp"
+
+            android:layout_height="120dp"
+
+            android:layout_gravity="center"
+
+            android:layout_marginTop="15dp"
+
+            android:padding="20dp"
+
+            android:orientation="vertical"
+
+            android:background="@drawable/permission_card">
+
+
+
+            <ImageView
+
+                android:layout_width="35dp"
+
+                android:layout_height="35dp"
+
+                android:padding="7dp"
+
+                android:src="@drawable/ic_usage"
+
+                android:background="@drawable/icon_circle"/>
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="8dp"
+
+                android:text="Stay More Focused"
+
+                android:textSize="20sp"
+
+                android:textStyle="bold"
+
+                android:textColor="@color/blossom_text"
+
+                android:fontFamily="serif"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <!-- Continue Button -->
+
+
+        <TextView
+
+            android:id="@+id/continueButton"
+
+            android:layout_width="330dp"
+
+            android:layout_height="55dp"
+
+            android:layout_gravity="center"
+
+            android:layout_marginTop="45dp"
+
+            android:gravity="center"
+
+            android:text="Continue"
+
+            android:textSize="16sp"
+
+            android:textColor="#FFFFFF"
+
+            android:fontFamily="serif"
+
+            android:background="@drawable/button_permission"/>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

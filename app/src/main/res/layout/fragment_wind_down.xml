@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:background="@color/blossom_background">
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+        android:padding="16dp">
+
+
+
+        <!-- TOP -->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="45dp"
+
+            android:gravity="center_vertical">
+
+
+            <TextView
+
+                android:id="@+id/backButton"
+
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+
+                android:text="‹"
+
+                android:textSize="35sp"
+
+                android:textColor="#6D4C5B"/>
+
+
+
+            <TextView
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+
+                android:gravity="center"
+
+                android:text="🌙"
+
+                android:textSize="22sp"
+
+                android:textColor="#C2185B"/>
+
+
+        </LinearLayout>
+
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:layout_marginTop="35dp"
+
+            android:text="Wind Down With\nBlossom"
+
+            android:textSize="28sp"
+
+            android:textStyle="bold"
+
+            android:gravity="center"
+
+            android:textColor="@color/blossom_text"
+
+            android:fontFamily="serif"/>
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:layout_marginTop="10dp"
+
+            android:text="Your goal tonight: sleep by 11:00 PM"
+
+            android:textSize="14sp"
+
+            android:textColor="#8A6F7A"/>
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:layout_marginTop="50dp"
+
+            android:text="2 of 5 completed"
+
+            android:textSize="12sp"
+
+            android:textColor="#8A6F7A"/>
+
+
+
+
+        <!-- TASKS -->
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="25dp"
+
+            android:orientation="vertical">
+
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+
+                android:layout_height="55dp"
+
+                android:gravity="center_vertical"
+
+                android:padding="15dp"
+
+                android:text="✓   Finish social media"
+
+                android:textSize="15sp"
+
+                android:textColor="#8A6F7A"
+
+                android:background="@drawable/dashboard_card"/>
+
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+
+                android:layout_height="55dp"
+
+                android:layout_marginTop="10dp"
+
+                android:gravity="center_vertical"
+
+                android:padding="15dp"
+
+                android:text="✓   Prepare for tomorrow"
+
+                android:textSize="15sp"
+
+                android:textColor="#8A6F7A"
+
+                android:background="@drawable/dashboard_card"/>
+
+
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+
+                android:layout_height="55dp"
+
+                android:layout_marginTop="10dp"
+
+                android:gravity="center_vertical"
+
+                android:padding="15dp"
+
+                android:text="○   Complete 2-minute breathing"
+
+                android:textSize="15sp"
+
+                android:textColor="@color/blossom_text"
+
+                android:background="@drawable/dashboard_card"/>
+
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+
+                android:layout_height="55dp"
+
+                android:layout_marginTop="10dp"
+
+                android:gravity="center_vertical"
+
+                android:padding="15dp"
+
+                android:text="○   Put your phone away"
+
+                android:textSize="15sp"
+
+                android:textColor="@color/blossom_text"
+
+                android:background="@drawable/dashboard_card"/>
+
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+
+                android:layout_height="55dp"
+
+                android:layout_marginTop="10dp"
+
+                android:gravity="center_vertical"
+
+                android:padding="15dp"
+
+                android:text="○   Be in bed by 11:00 PM"
+
+                android:textSize="15sp"
+
+                android:textColor="@color/blossom_text"
+
+                android:background="@drawable/dashboard_card"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+        <Button
+
+            android:layout_width="match_parent"
+
+            android:layout_height="50dp"
+
+            android:layout_marginTop="10dp"
+
+            android:text="Continue Routine"
+
+            android:textColor="@android:color/white"
+
+            android:background="@drawable/button_pink"/>
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:layout_marginTop="15dp"
+
+            android:text="Small steps help your mind settle."
+
+            android:textSize="12sp"
+
+            android:textColor="#8A6F7A"/>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

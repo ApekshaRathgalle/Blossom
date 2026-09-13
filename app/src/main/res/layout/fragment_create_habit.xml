@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/blossom_background">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+        android:padding="16dp"
+
+        android:paddingBottom="120dp">
+
+
+        <!-- TOP BAR -->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            android:gravity="center_vertical">
+
+
+            <TextView
+
+                android:id="@+id/backButton"
+
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+
+                android:text="‹"
+
+                android:textSize="35sp"
+
+                android:textColor="#C2185B"/>
+
+
+
+            <TextView
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+
+                android:gravity="center"
+
+                android:text="Create a Habit"
+
+                android:textColor="#C2185B"
+
+                android:textSize="18sp"
+
+                android:fontFamily="serif"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <!-- HABIT NAME -->
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="90dp"
+
+            android:layout_marginTop="15dp"
+
+            android:padding="12dp"
+
+            android:orientation="vertical"
+
+            android:background="@drawable/dashboard_card">
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="Habit Name"
+
+                android:textSize="12sp"
+
+                android:textColor="#8A6F7A"/>
+
+
+
+            <EditText
+
+                android:id="@+id/habitName"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="40dp"
+
+                android:layout_marginTop="8dp"
+
+                android:hint="e.g. No phone in bed"
+
+                android:padding="10dp"
+
+                android:textSize="13sp"
+
+                android:background="@drawable/input_background"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <!-- CATEGORY -->
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="85dp"
+
+            android:layout_marginTop="10dp"
+
+            android:padding="12dp"
+
+            android:orientation="vertical"
+
+            android:background="@drawable/dashboard_card">
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="Category"
+
+                android:textColor="#8A6F7A"
+
+                android:textSize="12sp"/>
+
+
+
+            <TextView
+
+                android:id="@+id/category"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="40dp"
+
+                android:layout_marginTop="8dp"
+
+                android:gravity="center_vertical"
+
+                android:paddingLeft="15dp"
+
+                android:text="Digital Wellness     ⌄"
+
+                android:textSize="13sp"
+
+                android:background="@drawable/input_background"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <!-- GOAL FREQUENCY -->
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="90dp"
+
+            android:layout_marginTop="10dp"
+
+            android:padding="12dp"
+
+            android:orientation="vertical"
+
+            android:background="@drawable/dashboard_card">
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="Goal Frequency"
+
+                android:textColor="#8A6F7A"
+
+                android:textSize="12sp"/>
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="40dp"
+
+                android:layout_marginTop="8dp"
+
+                android:background="@drawable/input_background">
+
+
+                <TextView
+
+                    android:id="@+id/dailyButton"
+
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+
+                    android:text="Daily"
+
+                    android:textColor="@android:color/white"
+
+                    android:background="@drawable/button_pink"/>
+
+
+
+                <TextView
+
+                    android:id="@+id/weeklyButton"
+
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+
+                    android:text="Weekly"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <!-- TARGET -->
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="85dp"
+
+            android:layout_marginTop="10dp"
+
+            android:padding="12dp"
+
+            android:orientation="vertical"
+
+            android:background="@drawable/dashboard_card">
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="Target"
+
+                android:textSize="12sp"
+
+                android:textColor="#8A6F7A"/>
+
+
+
+            <EditText
+
+                android:id="@+id/target"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="40dp"
+
+                android:layout_marginTop="8dp"
+
+                android:hint="30 minutes"
+
+                android:padding="10dp"
+
+                android:background="@drawable/input_background"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <!-- REMINDER -->
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="85dp"
+
+            android:layout_marginTop="10dp"
+
+            android:padding="12dp"
+
+            android:orientation="vertical"
+
+            android:background="@drawable/dashboard_card">
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="Reminder Time"
+
+                android:textSize="12sp"
+
+                android:textColor="#8A6F7A"/>
+
+
+
+            <TextView
+
+                android:id="@+id/reminderTime"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="40dp"
+
+                android:layout_marginTop="8dp"
+
+                android:gravity="center_vertical"
+
+                android:paddingLeft="15dp"
+
+                android:text="10:30 PM     ◷"
+
+                android:background="@drawable/input_background"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <!-- ICON TITLE -->
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+
+            android:text="Choose an Icon"
+
+            android:textColor="#6D4C5B"/>
+
+
+
+
+
+
+        <!-- ICON GRID -->
+
+
+        <GridLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:columnCount="3"
+
+            android:padding="10dp"
+
+            android:background="@drawable/dashboard_card">
+
+
+            <ImageView
+
+                android:id="@+id/iconSun"
+
+                android:layout_width="60dp"
+
+                android:layout_height="60dp"
+
+                android:padding="15dp"
+
+                android:src="@drawable/ic_sun"
+
+                android:background="@drawable/selected_icon_circle"/>
+
+
+
+            <ImageView
+
+                android:id="@+id/iconMoon"
+
+                android:layout_width="60dp"
+
+                android:layout_height="60dp"
+
+                android:padding="15dp"
+
+                android:src="@drawable/ic_moon"/>
+
+
+
+            <ImageView
+
+                android:id="@+id/iconLeaf"
+
+                android:layout_width="60dp"
+
+                android:layout_height="60dp"
+
+                android:padding="15dp"
+
+                android:src="@drawable/ic_leaf"/>
+
+
+
+            <ImageView
+
+                android:id="@+id/iconBook"
+
+                android:layout_width="60dp"
+
+                android:layout_height="60dp"
+
+                android:padding="15dp"
+
+                android:src="@drawable/ic_book"/>
+
+
+
+            <ImageView
+
+                android:id="@+id/iconWalk"
+
+                android:layout_width="60dp"
+
+                android:layout_height="60dp"
+
+                android:padding="15dp"
+
+                android:src="@drawable/ic_walk"/>
+
+
+
+            <ImageView
+
+                android:id="@+id/iconPhone"
+
+                android:layout_width="60dp"
+
+                android:layout_height="60dp"
+
+                android:padding="15dp"
+
+                android:src="@drawable/ic_phone_off"/>
+
+
+        </GridLayout>
+
+
+
+
+
+
+        <!-- SUGGESTED -->
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+
+            android:text="Suggested Habits"
+
+            android:textColor="#6D4C5B"/>
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="Phone-Free Morning"
+
+                android:background="@drawable/habit_chip"/>
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="No Phone in Bed"
+
+                android:background="@drawable/habit_chip"/>
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="Read Instead"
+
+                android:background="@drawable/habit_chip"/>
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="NightBloom Routine"
+
+                android:background="@drawable/habit_chip"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <!-- CREATE BUTTON -->
+
+
+        <Button
+
+            android:id="@+id/createHabit"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="50dp"
+
+            android:layout_marginTop="25dp"
+
+            android:text="Create Habit"
+
+            android:textColor="@android:color/white"
+
+            android:background="@drawable/button_pink"/>
+
+
+
+
+        <!-- CANCEL -->
+
+
+        <Button
+
+            android:id="@+id/cancelHabit"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="50dp"
+
+            android:layout_marginTop="10dp"
+
+            android:text="Cancel"
+
+            android:textColor="#C2185B"
+
+            android:background="@drawable/input_background"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

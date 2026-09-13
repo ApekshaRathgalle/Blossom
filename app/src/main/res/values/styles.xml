@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+
+    <!-- Blossom Main Text -->
+
+    <style name="BlossomText">
+
+        <item name="android:fontFamily">serif</item>
+
+        <item name="android:textColor">
+            @color/blossom_text
+        </item>
+
+    </style>
+
+
+
+    <!-- Blossom Heading -->
+
+    <style name="BlossomHeading">
+
+        <item name="android:fontFamily">
+            serif
+        </item>
+
+        <item name="android:textSize">
+            28sp
+        </item>
+
+        <item name="android:textColor">
+            @color/blossom_text
+        </item>
+
+        <item name="android:textStyle">
+            bold
+        </item>
+
+    </style>
+
+
+
+    <!-- Blossom Button -->
+
+    <style name="BlossomButton">
+
+        <item name="android:fontFamily">
+            serif
+        </item>
+
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:textColor">
+            @color/blossom_text
+        </item>
+
+    </style>
+
+
+</resources>

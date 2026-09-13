@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/root"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#FFF8FB">
+
+
+    <!-- Glow Circle 1 -->
+
+    <View
+        android:id="@+id/glow1"
+
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+
+        android:background="@drawable/circle_outline"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="150dp"/>
+
+
+    <!-- Glow Circle 2 -->
+
+    <View
+        android:id="@+id/glow2"
+
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+
+        android:background="@drawable/circle_outline"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="180dp"/>
+
+
+    <!-- Lotus -->
+
+    <ImageView
+
+        android:id="@+id/logoImage"
+
+        android:layout_width="80dp"
+
+        android:layout_height="80dp"
+
+        android:src="@drawable/blossom_logo"
+
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="230dp"/>
+
+
+
+    <!-- Title -->
+
+
+    <TextView
+
+        android:id="@+id/appName"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="Blossom"
+
+        android:textColor="#24171D"
+
+        android:textSize="38sp"
+
+        android:textStyle="bold"
+
+
+        app:layout_constraintTop_toBottomOf="@id/logoImage"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="80dp"/>
+
+
+
+    <TextView
+
+        android:id="@+id/tagLine"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+
+        android:text="Mindful habits. Better you."
+
+        android:textColor="#7B6871"
+
+        android:textSize="15sp"
+
+
+        app:layout_constraintTop_toBottomOf="@id/appName"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="10dp"/>
+
+
+
+    <!-- Bottom Text -->
+
+
+    <TextView
+
+        android:id="@+id/description"
+
+        android:layout_width="300dp"
+
+        android:layout_height="wrap_content"
+
+        android:text="A smarter way to build healthier digital habits"
+
+        android:gravity="center"
+
+        android:textSize="13sp"
+
+        android:textColor="#7B6871"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginBottom="95dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

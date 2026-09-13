@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blossom_background">
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:paddingBottom="120dp">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+
+            <!-- HEADER -->
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blossom"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#C2185B"/>
+
+
+
+
+
+            <!-- PROFILE IMAGE -->
+
+
+            <ImageView
+
+                android:id="@+id/profileImage"
+
+                android:layout_width="100dp"
+
+                android:layout_height="100dp"
+
+                android:layout_gravity="center"
+
+                android:layout_marginTop="35dp"
+
+                android:background="@drawable/profile_circle"
+
+                android:padding="4dp"
+
+                android:scaleType="centerCrop"
+
+                android:src="@drawable/blossom_logo"/>
+
+
+
+
+
+            <!-- USER NAME -->
+
+
+            <TextView
+
+                android:id="@+id/userName"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+
+                android:layout_marginTop="12dp"
+
+                android:text="Maya"
+
+                android:textSize="25sp"
+
+                android:textStyle="bold"
+
+                android:textColor="@color/blossom_text"/>
+
+
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+
+                android:text="Growing healthier digital habits"
+
+                android:textSize="13sp"
+
+                android:textColor="#8A6F7A"/>
+
+
+
+
+
+
+
+            <!-- WELLNESS CARD -->
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="105dp"
+
+                android:layout_marginTop="20dp"
+
+                android:orientation="horizontal"
+
+                android:gravity="center_vertical"
+
+                android:padding="20dp"
+
+                android:background="@drawable/profile_card">
+
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+
+                        android:text="THIS WEEK"
+
+                        android:textSize="11sp"
+
+                        android:textColor="#8A6F7A"/>
+
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+
+                        android:text="78% wellness goal completed"
+
+                        android:textSize="18sp"
+
+                        android:textStyle="bold"
+
+                        android:textColor="@color/blossom_text"/>
+
+
+                </LinearLayout>
+
+
+
+                <TextView
+
+                    android:layout_width="45dp"
+
+                    android:layout_height="45dp"
+
+                    android:text="◔"
+
+                    android:textSize="32sp"
+
+                    android:textColor="#C2185B"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <!-- DIGITAL SETTINGS -->
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="18dp"
+
+                android:orientation="vertical"
+
+                android:background="@drawable/profile_card">
+
+
+                <TextView
+
+                    android:id="@+id/screenGoal"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="55dp"
+
+                    android:gravity="center_vertical"
+
+                    android:padding="18dp"
+
+                    android:text="▣   Daily Screen Goal        4 hours  ›"
+
+                    android:textColor="@color/blossom_text"/>
+
+
+
+                <View
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="1dp"
+
+                    android:background="#F4E1EA"/>
+
+
+
+                <TextView
+
+                    android:id="@+id/bedtime"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="55dp"
+
+                    android:gravity="center_vertical"
+
+                    android:padding="18dp"
+
+                    android:text="☾   Planned Bedtime        11:00 PM  ›"
+
+                    android:textColor="@color/blossom_text"/>
+
+
+
+                <View
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="1dp"
+
+                    android:background="#F4E1EA"/>
+
+
+
+                <TextView
+
+                    android:id="@+id/apps"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="55dp"
+
+                    android:gravity="center_vertical"
+
+                    android:padding="18dp"
+
+                    android:text="▦   Selected Apps             5 monitored ›"
+
+                    android:textColor="@color/blossom_text"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <!-- ACCOUNT -->
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="18dp"
+
+                android:orientation="vertical"
+
+                android:background="@drawable/profile_card">
+
+
+
+                <TextView
+
+                    android:id="@+id/notifications"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="55dp"
+
+                    android:gravity="center_vertical"
+
+                    android:padding="18dp"
+
+                    android:text="♧   Notifications                         ›"
+
+                    android:textColor="@color/blossom_text"/>
+
+
+
+                <View
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="1dp"
+
+                    android:background="#F4E1EA"/>
+
+
+
+                <TextView
+
+                    android:id="@+id/permissions"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="55dp"
+
+                    android:gravity="center_vertical"
+
+                    android:padding="18dp"
+
+                    android:text="▣   Usage Permissions                 ›"
+
+                    android:textColor="@color/blossom_text"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <!-- PRIVACY -->
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="18dp"
+
+                android:orientation="vertical"
+
+                android:background="@drawable/profile_card">
+
+
+
+                <TextView
+
+                    android:id="@+id/privacy"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="55dp"
+
+                    android:gravity="center_vertical"
+
+                    android:padding="18dp"
+
+                    android:text="♡   Privacy &amp; Data                       ›"
+
+                    android:textColor="@color/blossom_text"/>
+
+
+
+                <TextView
+
+                    android:id="@+id/export"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="55dp"
+
+                    android:gravity="center_vertical"
+
+                    android:padding="18dp"
+
+                    android:text="↓   Export My Progress              ›"
+
+                    android:textColor="@color/blossom_text"/>
+
+
+
+                <TextView
+
+                    android:id="@+id/about"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="55dp"
+
+                    android:gravity="center_vertical"
+
+                    android:padding="18dp"
+
+                    android:text="ⓘ   About Blossom                      ›"
+
+                    android:textColor="@color/blossom_text"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <!-- FOOTER -->
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+
+                android:layout_height="70dp"
+
+                android:gravity="center"
+
+                android:text="Blossom supports digital wellbeing and is not a medical diagnostic tool."
+
+                android:textSize="10sp"
+
+                android:textColor="#8A6F7A"/>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</FrameLayout>

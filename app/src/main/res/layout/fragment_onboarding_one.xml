@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/blossom_background">
+
+
+    <!-- Logo -->
+
+    <ImageView
+
+        android:id="@+id/onboardingLogo"
+
+        android:layout_width="55dp"
+
+        android:layout_height="55dp"
+
+        android:layout_gravity="top|center_horizontal"
+
+        android:layout_marginTop="45dp"
+
+        android:src="@drawable/blossom_logo"/>
+
+
+
+    <!-- Main Illustration -->
+
+    <ImageView
+
+        android:id="@+id/onboardingImage"
+
+        android:layout_width="300dp"
+
+        android:layout_height="300dp"
+
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginTop="150dp"
+
+        android:src="@drawable/onboarding_habits1"
+
+        android:scaleType="fitCenter"/>
+
+
+
+    <!-- Heading -->
+
+
+    <TextView
+
+        android:id="@+id/title"
+
+        android:layout_width="330dp"
+
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginTop="465dp"
+
+        android:gravity="center"
+
+        android:text="Understand Your&#10;Digital Habits"
+
+        android:textColor="@color/blossom_text"
+
+        android:textSize="30sp"
+
+        android:textStyle="bold"
+
+        android:fontFamily="serif"/>
+
+
+
+    <!-- Description -->
+
+
+    <TextView
+
+        android:id="@+id/description"
+
+        android:layout_width="330dp"
+
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginTop="570dp"
+
+        android:gravity="center"
+
+        android:text="See when scrolling becomes automatic&#10;and understand how your screen habits&#10;shape your day."
+
+        android:textColor="#8A6F7A"
+
+        android:textSize="17sp"
+
+        android:lineSpacingExtra="5dp"
+
+        android:fontFamily="serif"/>
+
+
+
+    <!-- Page Indicators -->
+
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginTop="650dp"
+
+        android:orientation="horizontal">
+
+
+        <View
+
+            android:layout_width="8dp"
+
+            android:layout_height="8dp"
+
+            android:background="@drawable/dot_active"/>
+
+
+        <View
+
+            android:layout_width="8dp"
+
+            android:layout_height="8dp"
+
+            android:layout_marginLeft="10dp"
+
+            android:background="@drawable/dot_inactive"/>
+
+
+        <View
+
+            android:layout_width="8dp"
+
+            android:layout_height="8dp"
+
+            android:layout_marginLeft="10dp"
+
+            android:background="@drawable/dot_inactive"/>
+
+
+    </LinearLayout>
+
+
+
+    <!-- Next Button -->
+
+
+    <TextView
+
+        android:id="@+id/nextButton"
+
+        android:layout_width="330dp"
+
+        android:layout_height="55dp"
+
+        android:layout_gravity="bottom|center_horizontal"
+
+        android:layout_marginBottom="80dp"
+
+        android:gravity="center"
+
+        android:text="Next"
+
+        android:textColor="#211820"
+
+        android:textSize="18sp"
+
+        android:fontFamily="serif"
+
+        android:background="@drawable/button_pink"/>
+
+
+
+    <!-- Skip -->
+
+
+    <TextView
+
+        android:id="@+id/skipButton"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="bottom|center_horizontal"
+
+        android:layout_marginBottom="35dp"
+
+        android:text="Skip"
+
+        android:textColor="#8A6F7A"
+
+        android:textSize="16sp"
+
+        android:fontFamily="serif"/>
+
+
+</FrameLayout>

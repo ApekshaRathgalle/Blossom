@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:background="@color/blossom_background">
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+        android:padding="18dp">
+
+
+
+        <!-- Header -->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="50dp"
+
+            android:gravity="center_vertical">
+
+
+            <TextView
+
+                android:text="‹"
+
+                android:textSize="35sp"
+
+                android:textColor="#EC4C88"
+
+                android:layout_width="40dp"
+
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+
+                android:gravity="center"
+
+                android:text="Blossom"
+
+                android:textSize="20sp"
+
+                android:textStyle="bold"
+
+                android:textColor="@color/blossom_text"/>
+
+
+            <ImageView
+
+                android:layout_width="25dp"
+
+                android:layout_height="25dp"
+
+                android:src="@drawable/ic_notification"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <!-- Time Selector -->
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="45dp"
+
+            android:layout_marginTop="20dp"
+
+            android:background="@drawable/dashboard_card"
+
+            android:gravity="center">
+
+
+            <TextView
+
+                android:layout_width="80dp"
+
+                android:layout_height="35dp"
+
+                android:gravity="center"
+
+                android:text="Day"
+
+                android:textColor="#FFFFFF"
+
+                android:background="@drawable/button_pink"/>
+
+
+            <TextView
+
+                android:layout_width="80dp"
+
+                android:layout_height="35dp"
+
+                android:gravity="center"
+
+                android:text="Week"/>
+
+
+
+            <TextView
+
+                android:layout_width="80dp"
+
+                android:layout_height="35dp"
+
+                android:gravity="center"
+
+                android:text="Month"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <!-- Screen Time Card -->
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="220dp"
+
+            android:layout_marginTop="20dp"
+
+            android:padding="18dp"
+
+            android:orientation="vertical"
+
+            android:background="@drawable/dashboard_card">
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="Today's Screen Time"
+
+                android:textSize="18sp"
+
+                android:textStyle="bold"
+
+                android:textColor="@color/blossom_text"/>
+
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+
+                android:text="3h 45m"
+
+                android:textSize="28sp"
+
+                android:textStyle="bold"
+
+                android:textColor="#D32873"/>
+
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="↓ 20 min less than yesterday"
+
+                android:textColor="#6BB89B"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <!-- Apps Title -->
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="25dp"
+
+            android:text="Most Used Apps"
+
+            android:textSize="20sp"
+
+            android:textStyle="bold"
+
+            android:textColor="@color/blossom_text"/>
+
+
+
+
+
+        <!-- Instagram -->
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="55dp"
+
+            android:layout_marginTop="15dp"
+
+            android:padding="15dp"
+
+            android:text="Instagram                         1h 32m"
+
+            android:background="@drawable/dashboard_card"/>
+
+
+
+
+
+        <!-- Youtube -->
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="55dp"
+
+            android:layout_marginTop="10dp"
+
+            android:padding="15dp"
+
+            android:text="YouTube                              56m"
+
+            android:background="@drawable/dashboard_card"/>
+
+
+
+
+
+        <!-- TikTok -->
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="55dp"
+
+            android:layout_marginTop="10dp"
+
+            android:padding="15dp"
+
+            android:text="TikTok                                42m"
+
+            android:background="@drawable/dashboard_card"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
